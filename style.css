@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+h1:hover {
+    color: darkorchid;
+    cursor: pointer;
+}
+img {
+    width: 40px;
+    height: 40px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.box-wrapper {
+    width: 95%;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container {
+    font-weight: 500;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 4px solid rgb(4, 128, 170);
+    margin-top: 2rem;
+    padding: 10px;
+}
+ .display-container {
+    display: flex;
+    flex-direction: row;
+    border: none;
+    justify-content: space-between;
+    align-items: space-between;
+    padding: 1rem;
+    font-weight: 300;
+}
+.display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(4, 128, 170);
+}
+input {
+    font-weight: 500;
+    height: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 60%;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid green;
+    caret-color: darkblue;
+}
+button {
+    width: 25%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: 2px solid rgb(4, 128, 170);
+    cursor: pointer;
+}
+button:hover {
+    background: rgb(0, 255, 255, 0.6);
+    transition: all 0.3s ease-in;
+}
+table {
+    margin-top: 2rem;
+    width: 45%;
+    border: 2px solid rgb(4, 128, 170);
+    border-left: none;
+    border-right: none;
+    border-collapse: collapse;
+    align-self: flex-start;
+}
+td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    border-bottom: 2px solid rgb(4, 128, 170);
+    border-width: 100%;
+}
+thead {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+#delete-btn {
+    margin-top: 10px;
+}
+@media screen and (max-width: 816px) {
+    .container {
+        width: 100%;
+    }
+    table {
+        width: 100%;
+    }
+}

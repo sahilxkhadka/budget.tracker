@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   
+    <title>Expenses App</title>
+</head>
+<body>
+    <div class="box-wrapper">
+        <div class="container budget-container">
+            <label for="total-amount" >Please enter your budget</label>
+            <input type= "number" id="total-amount">
+            <button id="budget-btn">Add Budget</button>
+        </div>
+        <div class="container display-container">
+            <div class="budget-display display">
+                <h1>Budget</h1>
+                <img src="./wallet-solid.svg" alt="">
+                <h1 id="budget-dollar">$000</h1>
+            </div>
+            <div class="expenses-display display">
+                <h1>Expenses</h1>
+                <img src="./money-bill-wave-solid.svg" alt="">
+                <h1 id="expense-dollar">$000</h1>
+            </div>
+            <div class="balance-display display">
+                <h1>Balance</h1>
+                <img src="./dollar-sign-solid.svg" alt="">
+                <h1 id="balance-dollar">$000</h1>
+            </div>
+        </div>
+        <div class="container expense-container">
+            <label for="expense-title">What did you spend for?</label>
+            <input type="text" id="expense-title">
+            <label for="total-amount">Amount</label>
+            <input type= "number" id="expense-amount">
+            <button id="expense-btn">Add Expense</button>
+            <button id="delete-btn">DELETE ALL</button>
+        </div>
+        <table id="table">
+            
+        </table>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
